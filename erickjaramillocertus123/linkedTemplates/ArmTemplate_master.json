@@ -7,21 +7,21 @@
 			"metadata": "Nombre de instancia de Data Factory",
 			"defaultValue": "erickjaramillocertus123"
 		},
-		"Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey": {
-			"type": "secureString",
-			"metadata": "Cadena protegida para \"accountKey\"de \"Conector_azureDataLakeStorageADLS_con_Datafactory\""
-		},
 		"AzureDatabricks_DataFactory_accessToken": {
 			"type": "secureString",
 			"metadata": "Cadena protegida para \"accessToken\"de \"AzureDatabricks_DataFactory\""
 		},
-		"Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://ejaramillocertus.dfs.core.windows.net/"
+		"Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey": {
+			"type": "secureString",
+			"metadata": "Cadena protegida para \"accountKey\"de \"Conector_azureDataLakeStorageADLS_con_Datafactory\""
 		},
 		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "1005-021619-y2t6uc5e"
+		},
+		"Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://ejaramillocertus.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -50,17 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey": {
-						"value": "[parameters('Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey')]"
-					},
 					"AzureDatabricks_DataFactory_accessToken": {
 						"value": "[parameters('AzureDatabricks_DataFactory_accessToken')]"
 					},
-					"Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url": {
-						"value": "[parameters('Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url')]"
+					"Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey": {
+						"value": "[parameters('Conector_azureDataLakeStorageADLS_con_Datafactory_accountKey')]"
 					},
 					"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
 						"value": "[parameters('AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId')]"
+					},
+					"Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url": {
+						"value": "[parameters('Conector_azureDataLakeStorageADLS_con_Datafactory_properties_typeProperties_url')]"
 					}
 				}
 			},
