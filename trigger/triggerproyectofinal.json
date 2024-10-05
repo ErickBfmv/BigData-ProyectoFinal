@@ -14,11 +14,19 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
-				"interval": 3,
+				"frequency": "Day",
+				"interval": 1,
 				"startTime": "2024-10-04T00:46:00",
 				"endTime": "2024-11-13T05:44:00",
-				"timeZone": "SA Pacific Standard Time"
+				"timeZone": "SA Pacific Standard Time",
+				"schedule": {
+					"minutes": [
+						13
+					],
+					"hours": [
+						1
+					]
+				}
 			}
 		}
 	}
