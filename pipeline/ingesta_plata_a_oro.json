@@ -1,10 +1,10 @@
 {
-	"name": "ingesta_bronce_a_plata",
+	"name": "ingesta_plata_a_oro",
 	"properties": {
-		"description": "ingesta de archivos desde capa bronce a plata",
+		"description": "canal pipeline de capa plata a oro",
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "Notebook2",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/fiictiiziio@hotmail.com/Ingesta_capa_bronce_a_plata"
+					"notebookPath": "/Users/fiictiiziio@hotmail.com/Ingesta_capa_plata_a_oro"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks_DataFactory",
