@@ -2,7 +2,7 @@
 	"name": "Desencadenador_proyectofinal",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
