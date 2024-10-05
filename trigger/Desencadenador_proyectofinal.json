@@ -1,0 +1,24 @@
+{
+	"name": "Desencadenador_proyectofinal",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Execute_pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 3,
+				"startTime": "2024-10-04T01:35:00",
+				"timeZone": "SA Pacific Standard Time"
+			}
+		}
+	}
+}
