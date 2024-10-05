@@ -1,0 +1,9 @@
+{
+	"name": "erickjaramillocertus123",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8cdcd628-b335-4c5e-8a4d-e80f969239eb",
+		"tenantId": "22f3dba5-735a-46c0-a45c-18fe69fa82f5"
+	}
+}
