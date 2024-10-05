@@ -1,0 +1,71 @@
+{
+	"name": "Execute_pipeline",
+	"properties": {
+		"description": "pipeline de automatización total",
+		"activities": [
+			{
+				"name": "Ejecuta_canal_input_a_bronce",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ingesta_input_a_capa_bronce",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Ejecuta_canal_bronce_a_plata",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Ejecuta_canal_input_a_bronce",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ingesta_bronce_a_plata",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Ejecuta_canal_plata_a_oro",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Ejecuta_canal_bronce_a_plata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ingesta_plata_a_oro",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
